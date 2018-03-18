@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lab/ontologies/2018/2/DragonAgeInquisition"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lab/ontologies/2018/2/DragonAgeInquisition">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Thedas_Countries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orlais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amaranthine_Ocean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seheron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forests"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elven_Gods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ansburg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Markham"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Magi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starkhaven"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#World_Events"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hasmal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qunari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Free_Marches"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orzamar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hercina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deserts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mountans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Estwatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Western_Approach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oceans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arbour_Wilds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ferelden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nevarra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Histoic_Events"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rivain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kal-Sharok"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Andratian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thedas_Natural_Geographical_Features"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wycome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kirkwall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buried_Sea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hambleton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kocari_Wilds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People_of_the_Qun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Par_Vollen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tevinter_Imperium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ostwick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kaiten"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dwarven_Strongholds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frostback_Mountains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dwarf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waking_Sea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anderfels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hissing_Wastes"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Amaranthine_Ocean"/>
+        <Class IRI="#Oceans"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anderfels"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Andratian"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ansburg"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antiva"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arbour_Wilds"/>
+        <Class IRI="#Forests"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buried_Sea"/>
+        <Class IRI="#Oceans"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deserts"/>
+        <Class IRI="#Thedas_Natural_Geographical_Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dwarven_Strongholds"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elven_Gods"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Estwatch"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ferelden"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forests"/>
+        <Class IRI="#Thedas_Natural_Geographical_Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Free_Marches"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frostback_Mountains"/>
+        <Class IRI="#Mountans"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hambleton"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hasmal"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hercina"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hissing_Wastes"/>
+        <Class IRI="#Deserts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kaiten"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kal-Sharok"/>
+        <Class IRI="#Dwarven_Strongholds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kirkwall"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kocari_Wilds"/>
+        <Class IRI="#Forests"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Markham"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountans"/>
+        <Class IRI="#Thedas_Natural_Geographical_Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nevarra"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oceans"/>
+        <Class IRI="#Thedas_Natural_Geographical_Features"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orlais"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orzamar"/>
+        <Class IRI="#Dwarven_Strongholds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ostwick"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Par_Vollen"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#People_of_the_Qun"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rivain"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seheron"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Starkhaven"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tevinter_Imperium"/>
+        <Class IRI="#Thedas_Countries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Waking_Sea"/>
+        <Class IRI="#Oceans"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Western_Approach"/>
+        <Class IRI="#Deserts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wycome"/>
+        <Class IRI="#Free_Marches"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Amaranthine_Ocean"/>
+        <Class IRI="#Buried_Sea"/>
+        <Class IRI="#Waking_Sea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Arbour_Wilds"/>
+        <Class IRI="#Kocari_Wilds"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dwarf"/>
+        <Class IRI="#Elf"/>
+        <Class IRI="#Histoic_Events"/>
+        <Class IRI="#Human"/>
+        <Class IRI="#Magi"/>
+        <Class IRI="#Qunari"/>
+        <Class IRI="#Religion"/>
+        <Class IRI="#Thedas_Countries"/>
+        <Class IRI="#Thedas_Natural_Geographical_Features"/>
+        <Class IRI="#World_Events"/>
+    </DisjointClasses>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
