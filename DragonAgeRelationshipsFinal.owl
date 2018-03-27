@@ -1,0 +1,696 @@
+Prefix(:=<http://www.semanticweb.org/lab/ontologies/2018/2/DragonAgeRelationships#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/lab/ontologies/2018/2/DragonAgeRelationships>
+
+Declaration(Class(:Darkspawn))
+Declaration(Class(:Dwarf))
+Declaration(Class(:Elf))
+Declaration(Class(:Human))
+Declaration(Class(:Person))
+Declaration(Class(:Qunari))
+Declaration(Class(:Spirit))
+Declaration(ObjectProperty(:Ally_Of))
+Declaration(ObjectProperty(:Apprentice_Of))
+Declaration(ObjectProperty(:Aunt_Of))
+Declaration(ObjectProperty(:Brother_of))
+Declaration(ObjectProperty(:Child_Of))
+Declaration(ObjectProperty(:Clan_Mate_Of))
+Declaration(ObjectProperty(:Commander_Of))
+Declaration(ObjectProperty(:Companion_Of))
+Declaration(ObjectProperty(:Cousin_Of))
+Declaration(ObjectProperty(:Enemy_Of))
+Declaration(ObjectProperty(:Father_Of))
+Declaration(ObjectProperty(:Former_Companion_Of))
+Declaration(ObjectProperty(:Former_Friend_Of))
+Declaration(ObjectProperty(:Former_Husband_Of))
+Declaration(ObjectProperty(:Former_Lover_Of))
+Declaration(ObjectProperty(:Former_Wife_OF))
+Declaration(ObjectProperty(:Friend_Of))
+Declaration(ObjectProperty(:Grandchild_Of))
+Declaration(ObjectProperty(:Grandmother_Of))
+Declaration(ObjectProperty(:Has_Met))
+Declaration(ObjectProperty(:Husband_Of))
+Declaration(ObjectProperty(:Lover_Of))
+Declaration(ObjectProperty(:Mentor_Of))
+Declaration(ObjectProperty(:Mother_Of))
+Declaration(ObjectProperty(:Neice_Of))
+Declaration(ObjectProperty(:Nephew_Of))
+Declaration(ObjectProperty(:Relationship))
+Declaration(ObjectProperty(:Ruler_Of))
+Declaration(ObjectProperty(:Sister_Of))
+Declaration(ObjectProperty(:Subject_Of))
+Declaration(ObjectProperty(:Subordinate_Of))
+Declaration(ObjectProperty(:Uncle_Of))
+Declaration(ObjectProperty(:Wife_Of))
+Declaration(DataProperty(:name))
+Declaration(NamedIndividual(:Alexius))
+Declaration(NamedIndividual(:Alistair))
+Declaration(NamedIndividual(:Anders))
+Declaration(NamedIndividual(:Anora))
+Declaration(NamedIndividual(:Athenril))
+Declaration(NamedIndividual(:Bartrand))
+Declaration(NamedIndividual(:Bethany))
+Declaration(NamedIndividual(:Bhelen))
+Declaration(NamedIndividual(:Bianca))
+Declaration(NamedIndividual(:Blackwall))
+Declaration(NamedIndividual(:Branka))
+Declaration(NamedIndividual(:Briala))
+Declaration(NamedIndividual(:Carver))
+Declaration(NamedIndividual(:Cassandra_Pentaghast))
+Declaration(NamedIndividual(:Celene))
+Declaration(NamedIndividual(:Cole))
+Declaration(NamedIndividual(:Corypheus))
+Declaration(NamedIndividual(:Cullen_Rutherford))
+Declaration(NamedIndividual(:Dagna))
+Declaration(NamedIndividual(:Dorian_Pavus))
+Declaration(NamedIndividual(:Duncan))
+Declaration(NamedIndividual(:Felsi))
+Declaration(NamedIndividual(:Fenris))
+Declaration(NamedIndividual(:Fiona))
+Declaration(NamedIndividual(:Flemeth))
+Declaration(NamedIndividual(:Florianne))
+Declaration(NamedIndividual(:Gamlen_Amell))
+Declaration(NamedIndividual(:Gaspard))
+Declaration(NamedIndividual(:Hawen))
+Declaration(NamedIndividual(:Hawke))
+Declaration(NamedIndividual(:Hero_of_Ferelden_Sabrae))
+Declaration(NamedIndividual(:Hissrad))
+Declaration(NamedIndividual(:Inquisitor_Lavellan))
+Declaration(NamedIndividual(:Isabela))
+Declaration(NamedIndividual(:Josephine_Montilyet))
+Declaration(NamedIndividual(:Justice))
+Declaration(NamedIndividual(:Kieran))
+Declaration(NamedIndividual(:Knight_Commander_Meredith_Stannard))
+Declaration(NamedIndividual(:Lace_Harding))
+Declaration(NamedIndividual(:Leandra))
+Declaration(NamedIndividual(:Leliana))
+Declaration(NamedIndividual(:Leto))
+Declaration(NamedIndividual(:Lietutenant_Renn))
+Declaration(NamedIndividual(:Loghain))
+Declaration(NamedIndividual(:Marethari_Talas))
+Declaration(NamedIndividual(:Merrill))
+Declaration(NamedIndividual(:Morrigan))
+Declaration(NamedIndividual(:Mythal))
+Declaration(NamedIndividual(:Nathaniel_Howe))
+Declaration(NamedIndividual(:Oghren))
+Declaration(NamedIndividual(:Orsino))
+Declaration(NamedIndividual(:Rendon__Howe))
+Declaration(NamedIndividual(:Saarath))
+Declaration(NamedIndividual(:Samson))
+Declaration(NamedIndividual(:Sera))
+Declaration(NamedIndividual(:Sigrun))
+Declaration(NamedIndividual(:Solas))
+Declaration(NamedIndividual(:Sten))
+Declaration(NamedIndividual(:Stroud))
+Declaration(NamedIndividual(:Tallis))
+Declaration(NamedIndividual(:Tamlen))
+Declaration(NamedIndividual(:The_Architect))
+Declaration(NamedIndividual(:The_Iron_Bull))
+Declaration(NamedIndividual(:Thom_Rainier))
+Declaration(NamedIndividual(:Valta))
+Declaration(NamedIndividual(:Varania))
+Declaration(NamedIndividual(:Velanna))
+Declaration(NamedIndividual(:Verric))
+Declaration(NamedIndividual(:Viddasala))
+Declaration(NamedIndividual(:Vivienne))
+Declaration(NamedIndividual(:Wynne))
+Declaration(NamedIndividual(:Yavana))
+Declaration(NamedIndividual(:Zathrian))
+Declaration(NamedIndividual(:Zevran))
+Declaration(NamedIndividual(:Harel))
+############################
+#   Object Properties
+############################
+
+# Object Property: :Ally_Of (:Ally_Of)
+
+SubObjectPropertyOf(:Ally_Of :Relationship)
+InverseObjectProperties(:Ally_Of :Enemy_Of)
+ObjectPropertyDomain(:Ally_Of :Person)
+ObjectPropertyRange(:Ally_Of :Person)
+
+# Object Property: :Apprentice_Of (:Apprentice_Of)
+
+SubObjectPropertyOf(:Apprentice_Of :Relationship)
+InverseObjectProperties(:Apprentice_Of :Mentor_Of)
+ObjectPropertyDomain(:Apprentice_Of :Person)
+ObjectPropertyRange(:Apprentice_Of :Person)
+
+# Object Property: :Aunt_Of (:Aunt_Of)
+
+SubObjectPropertyOf(:Aunt_Of :Relationship)
+InverseObjectProperties(:Aunt_Of :Nephew_Of)
+ObjectPropertyDomain(:Aunt_Of :Person)
+ObjectPropertyRange(:Aunt_Of :Person)
+
+# Object Property: :Brother_of (:Brother_of)
+
+SubObjectPropertyOf(:Brother_of :Relationship)
+ObjectPropertyDomain(:Brother_of :Person)
+ObjectPropertyRange(:Brother_of :Person)
+
+# Object Property: :Child_Of (:Child_Of)
+
+SubObjectPropertyOf(:Child_Of :Relationship)
+InverseObjectProperties(:Child_Of :Father_Of)
+InverseObjectProperties(:Child_Of :Mother_Of)
+ObjectPropertyDomain(:Child_Of :Person)
+ObjectPropertyRange(:Child_Of :Person)
+
+# Object Property: :Clan_Mate_Of (:Clan_Mate_Of)
+
+SubObjectPropertyOf(:Clan_Mate_Of :Relationship)
+ObjectPropertyDomain(:Clan_Mate_Of :Person)
+ObjectPropertyRange(:Clan_Mate_Of :Person)
+
+# Object Property: :Commander_Of (:Commander_Of)
+
+SubObjectPropertyOf(:Commander_Of :Relationship)
+InverseObjectProperties(:Commander_Of :Subordinate_Of)
+ObjectPropertyDomain(:Commander_Of :Person)
+ObjectPropertyRange(:Commander_Of :Person)
+
+# Object Property: :Companion_Of (:Companion_Of)
+
+SubObjectPropertyOf(:Companion_Of :Relationship)
+ObjectPropertyDomain(:Companion_Of :Person)
+ObjectPropertyRange(:Companion_Of :Person)
+
+# Object Property: :Cousin_Of (:Cousin_Of)
+
+SubObjectPropertyOf(:Cousin_Of :Relationship)
+ObjectPropertyDomain(:Cousin_Of :Person)
+ObjectPropertyRange(:Cousin_Of :Person)
+
+# Object Property: :Enemy_Of (:Enemy_Of)
+
+SubObjectPropertyOf(:Enemy_Of :Relationship)
+ObjectPropertyDomain(:Enemy_Of :Person)
+ObjectPropertyRange(:Enemy_Of :Person)
+
+# Object Property: :Father_Of (:Father_Of)
+
+SubObjectPropertyOf(:Father_Of :Relationship)
+ObjectPropertyDomain(:Father_Of :Person)
+ObjectPropertyRange(:Father_Of :Person)
+
+# Object Property: :Former_Companion_Of (:Former_Companion_Of)
+
+SubObjectPropertyOf(:Former_Companion_Of :Relationship)
+ObjectPropertyDomain(:Former_Companion_Of :Person)
+ObjectPropertyRange(:Former_Companion_Of :Person)
+
+# Object Property: :Former_Friend_Of (:Former_Friend_Of)
+
+SubObjectPropertyOf(:Former_Friend_Of :Relationship)
+ObjectPropertyDomain(:Former_Friend_Of :Person)
+ObjectPropertyRange(:Former_Friend_Of :Person)
+
+# Object Property: :Former_Husband_Of (:Former_Husband_Of)
+
+SubObjectPropertyOf(:Former_Husband_Of :Relationship)
+ObjectPropertyDomain(:Former_Husband_Of :Person)
+ObjectPropertyRange(:Former_Husband_Of :Person)
+
+# Object Property: :Former_Lover_Of (:Former_Lover_Of)
+
+SubObjectPropertyOf(:Former_Lover_Of :Relationship)
+ObjectPropertyDomain(:Former_Lover_Of :Person)
+ObjectPropertyRange(:Former_Lover_Of :Person)
+
+# Object Property: :Former_Wife_OF (:Former_Wife_OF)
+
+SubObjectPropertyOf(:Former_Wife_OF :Relationship)
+ObjectPropertyDomain(:Former_Wife_OF :Person)
+ObjectPropertyRange(:Former_Wife_OF :Person)
+
+# Object Property: :Friend_Of (:Friend_Of)
+
+SubObjectPropertyOf(:Friend_Of :Relationship)
+ObjectPropertyDomain(:Friend_Of :Person)
+ObjectPropertyRange(:Friend_Of :Person)
+
+# Object Property: :Grandchild_Of (:Grandchild_Of)
+
+SubObjectPropertyOf(:Grandchild_Of :Relationship)
+InverseObjectProperties(:Grandchild_Of :Grandmother_Of)
+ObjectPropertyDomain(:Grandchild_Of :Person)
+ObjectPropertyRange(:Grandchild_Of :Person)
+
+# Object Property: :Grandmother_Of (:Grandmother_Of)
+
+SubObjectPropertyOf(:Grandmother_Of :Relationship)
+ObjectPropertyDomain(:Grandmother_Of :Person)
+ObjectPropertyRange(:Grandmother_Of :Person)
+
+# Object Property: :Has_Met (:Has_Met)
+
+SubObjectPropertyOf(:Has_Met :Relationship)
+ObjectPropertyDomain(:Has_Met :Person)
+ObjectPropertyRange(:Has_Met :Person)
+
+# Object Property: :Husband_Of (:Husband_Of)
+
+SubObjectPropertyOf(:Husband_Of :Relationship)
+ObjectPropertyDomain(:Husband_Of :Person)
+ObjectPropertyRange(:Husband_Of :Person)
+
+# Object Property: :Lover_Of (:Lover_Of)
+
+SubObjectPropertyOf(:Lover_Of :Relationship)
+ObjectPropertyDomain(:Lover_Of :Person)
+ObjectPropertyRange(:Lover_Of :Person)
+
+# Object Property: :Mentor_Of (:Mentor_Of)
+
+SubObjectPropertyOf(:Mentor_Of :Relationship)
+ObjectPropertyDomain(:Mentor_Of :Person)
+ObjectPropertyRange(:Mentor_Of :Person)
+
+# Object Property: :Mother_Of (:Mother_Of)
+
+SubObjectPropertyOf(:Mother_Of :Relationship)
+ObjectPropertyDomain(:Mother_Of :Person)
+ObjectPropertyRange(:Mother_Of :Person)
+
+# Object Property: :Neice_Of (:Neice_Of)
+
+SubObjectPropertyOf(:Neice_Of :Relationship)
+InverseObjectProperties(:Neice_Of :Neice_Of)
+InverseObjectProperties(:Neice_Of :Nephew_Of)
+ObjectPropertyDomain(:Neice_Of :Person)
+ObjectPropertyRange(:Neice_Of :Person)
+
+# Object Property: :Nephew_Of (:Nephew_Of)
+
+SubObjectPropertyOf(:Nephew_Of :Relationship)
+InverseObjectProperties(:Nephew_Of :Uncle_Of)
+ObjectPropertyDomain(:Nephew_Of :Person)
+ObjectPropertyRange(:Nephew_Of :Person)
+
+# Object Property: :Ruler_Of (:Ruler_Of)
+
+SubObjectPropertyOf(:Ruler_Of :Relationship)
+InverseObjectProperties(:Ruler_Of :Subject_Of)
+ObjectPropertyDomain(:Ruler_Of :Person)
+ObjectPropertyRange(:Ruler_Of :Person)
+
+# Object Property: :Sister_Of (:Sister_Of)
+
+SubObjectPropertyOf(:Sister_Of :Relationship)
+ObjectPropertyDomain(:Sister_Of :Person)
+ObjectPropertyRange(:Sister_Of :Person)
+
+# Object Property: :Subject_Of (:Subject_Of)
+
+SubObjectPropertyOf(:Subject_Of :Relationship)
+ObjectPropertyDomain(:Subject_Of :Person)
+ObjectPropertyRange(:Subject_Of :Person)
+
+# Object Property: :Subordinate_Of (:Subordinate_Of)
+
+SubObjectPropertyOf(:Subordinate_Of :Relationship)
+ObjectPropertyDomain(:Subordinate_Of :Person)
+ObjectPropertyRange(:Subordinate_Of :Person)
+
+# Object Property: :Uncle_Of (:Uncle_Of)
+
+SubObjectPropertyOf(:Uncle_Of :Relationship)
+ObjectPropertyDomain(:Uncle_Of :Person)
+ObjectPropertyRange(:Uncle_Of :Person)
+
+# Object Property: :Wife_Of (:Wife_Of)
+
+SubObjectPropertyOf(:Wife_Of :Relationship)
+ObjectPropertyDomain(:Wife_Of :Person)
+ObjectPropertyRange(:Wife_Of :Person)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :name (:name)
+
+DataPropertyDomain(:name :Person)
+DataPropertyRange(:name xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Darkspawn (:Darkspawn)
+
+SubClassOf(:Darkspawn :Person)
+
+# Class: :Dwarf (:Dwarf)
+
+SubClassOf(:Dwarf :Person)
+
+# Class: :Elf (:Elf)
+
+SubClassOf(:Elf :Person)
+
+# Class: :Human (:Human)
+
+SubClassOf(:Human :Person)
+
+# Class: :Person (:Person)
+
+
+# Class: :Qunari (:Qunari)
+
+SubClassOf(:Qunari :Person)
+
+# Class: :Spirit (:Spirit)
+
+SubClassOf(:Spirit :Person)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Alexius (:Alexius)
+
+ClassAssertion(:Human :Alexius)
+DataPropertyAssertion(:name :Alexius "")
+
+# Individual: :Alistair (:Alistair)
+
+ClassAssertion(:Elf :Alistair)
+ClassAssertion(:Human :Alistair)
+DataPropertyAssertion(:name :Alistair "")
+
+# Individual: :Anders (:Anders)
+
+ClassAssertion(:Human :Anders)
+SameIndividual(:Anders :Justice)
+
+# Individual: :Anora (:Anora)
+
+ClassAssertion(:Human :Anora)
+
+# Individual: :Athenril (:Athenril)
+
+ClassAssertion(:Elf :Athenril)
+
+# Individual: :Bartrand (:Bartrand)
+
+ClassAssertion(:Dwarf :Bartrand)
+
+# Individual: :Bethany (:Bethany)
+
+ClassAssertion(:Human :Bethany)
+
+# Individual: :Bhelen (:Bhelen)
+
+ClassAssertion(:Dwarf :Bhelen)
+
+# Individual: :Bianca (:Bianca)
+
+ClassAssertion(:Dwarf :Bianca)
+
+# Individual: :Blackwall (:Blackwall)
+
+ClassAssertion(:Human :Blackwall)
+SameIndividual(:Blackwall :Thom_Rainier)
+
+# Individual: :Branka (:Branka)
+
+ClassAssertion(:Dwarf :Branka)
+
+# Individual: :Briala (:Briala)
+
+ClassAssertion(:Elf :Briala)
+
+# Individual: :Carver (:Carver)
+
+ClassAssertion(:Human :Carver)
+
+# Individual: :Cassandra_Pentaghast (:Cassandra_Pentaghast)
+
+ClassAssertion(:Human :Cassandra_Pentaghast)
+
+# Individual: :Celene (:Celene)
+
+ClassAssertion(:Human :Celene)
+
+# Individual: :Cole (:Cole)
+
+ClassAssertion(:Spirit :Cole)
+
+# Individual: :Corypheus (:Corypheus)
+
+ClassAssertion(:Darkspawn :Corypheus)
+ClassAssertion(:Human :Corypheus)
+
+# Individual: :Cullen_Rutherford (:Cullen_Rutherford)
+
+ClassAssertion(:Human :Cullen_Rutherford)
+
+# Individual: :Dagna (:Dagna)
+
+ClassAssertion(:Dwarf :Dagna)
+
+# Individual: :Dorian_Pavus (:Dorian_Pavus)
+
+ClassAssertion(:Human :Dorian_Pavus)
+
+# Individual: :Duncan (:Duncan)
+
+ClassAssertion(:Human :Duncan)
+
+# Individual: :Felsi (:Felsi)
+
+ClassAssertion(:Dwarf :Felsi)
+
+# Individual: :Fenris (:Fenris)
+
+ClassAssertion(:Elf :Fenris)
+SameIndividual(:Fenris :Leto)
+
+# Individual: :Fiona (:Fiona)
+
+ClassAssertion(:Elf :Fiona)
+
+# Individual: :Flemeth (:Flemeth)
+
+ClassAssertion(:Human :Flemeth)
+SameIndividual(:Flemeth :Mythal)
+
+# Individual: :Florianne (:Florianne)
+
+ClassAssertion(:Human :Florianne)
+
+# Individual: :Gamlen_Amell (:Gamlen_Amell)
+
+ClassAssertion(:Human :Gamlen_Amell)
+
+# Individual: :Gaspard (:Gaspard)
+
+ClassAssertion(:Human :Gaspard)
+
+# Individual: :Hawen (:Hawen)
+
+ClassAssertion(:Elf :Hawen)
+
+# Individual: :Hawke (:Hawke)
+
+ClassAssertion(:Human :Hawke)
+
+# Individual: :Hero_of_Ferelden_Sabrae (:Hero_of_Ferelden_Sabrae)
+
+ClassAssertion(:Elf :Hero_of_Ferelden_Sabrae)
+
+# Individual: :Hissrad (:Hissrad)
+
+ClassAssertion(:Qunari :Hissrad)
+SameIndividual(:Hissrad :The_Iron_Bull)
+
+# Individual: :Inquisitor_Lavellan (:Inquisitor_Lavellan)
+
+ClassAssertion(:Elf :Inquisitor_Lavellan)
+
+# Individual: :Isabela (:Isabela)
+
+ClassAssertion(:Human :Isabela)
+
+# Individual: :Josephine_Montilyet (:Josephine_Montilyet)
+
+ClassAssertion(:Human :Josephine_Montilyet)
+
+# Individual: :Justice (:Justice)
+
+ClassAssertion(:Spirit :Justice)
+
+# Individual: :Kieran (:Kieran)
+
+ClassAssertion(:Elf :Kieran)
+ClassAssertion(:Human :Kieran)
+
+# Individual: :Knight_Commander_Meredith_Stannard (:Knight_Commander_Meredith_Stannard)
+
+ClassAssertion(:Human :Knight_Commander_Meredith_Stannard)
+
+# Individual: :Lace_Harding (:Lace_Harding)
+
+ClassAssertion(:Dwarf :Lace_Harding)
+
+# Individual: :Leandra (:Leandra)
+
+ClassAssertion(:Human :Leandra)
+
+# Individual: :Leliana (:Leliana)
+
+ClassAssertion(:Human :Leliana)
+
+# Individual: :Leto (:Leto)
+
+ClassAssertion(:Elf :Leto)
+
+# Individual: :Lietutenant_Renn (:Lietutenant_Renn)
+
+ClassAssertion(:Dwarf :Lietutenant_Renn)
+
+# Individual: :Loghain (:Loghain)
+
+ClassAssertion(:Human :Loghain)
+
+# Individual: :Marethari_Talas (:Marethari_Talas)
+
+ClassAssertion(:Elf :Marethari_Talas)
+
+# Individual: :Merrill (:Merrill)
+
+ClassAssertion(:Elf :Merrill)
+
+# Individual: :Morrigan (:Morrigan)
+
+ClassAssertion(:Human :Morrigan)
+
+# Individual: :Mythal (:Mythal)
+
+ClassAssertion(:Elf :Mythal)
+
+# Individual: :Nathaniel_Howe (:Nathaniel_Howe)
+
+ClassAssertion(:Human :Nathaniel_Howe)
+
+# Individual: :Oghren (:Oghren)
+
+ClassAssertion(:Dwarf :Oghren)
+
+# Individual: :Orsino (:Orsino)
+
+ClassAssertion(:Elf :Orsino)
+
+# Individual: :Rendon__Howe (:Rendon__Howe)
+
+ClassAssertion(:Human :Rendon__Howe)
+
+# Individual: :Saarath (:Saarath)
+
+ClassAssertion(:Qunari :Saarath)
+
+# Individual: :Samson (:Samson)
+
+ClassAssertion(:Human :Samson)
+
+# Individual: :Sera (:Sera)
+
+ClassAssertion(:Elf :Sera)
+
+# Individual: :Sigrun (:Sigrun)
+
+ClassAssertion(:Dwarf :Sigrun)
+
+# Individual: :Solas (:Solas)
+
+ClassAssertion(:Elf :Solas)
+SameIndividual(:Solas :Harel)
+
+# Individual: :Sten (:Sten)
+
+ClassAssertion(:Qunari :Sten)
+
+# Individual: :Stroud (:Stroud)
+
+ClassAssertion(:Human :Stroud)
+
+# Individual: :Tallis (:Tallis)
+
+ClassAssertion(:Elf :Tallis)
+
+# Individual: :Tamlen (:Tamlen)
+
+ClassAssertion(:Elf :Tamlen)
+
+# Individual: :The_Architect (:The_Architect)
+
+ClassAssertion(:Darkspawn :The_Architect)
+
+# Individual: :The_Iron_Bull (:The_Iron_Bull)
+
+ClassAssertion(:Qunari :The_Iron_Bull)
+
+# Individual: :Thom_Rainier (:Thom_Rainier)
+
+ClassAssertion(:Human :Thom_Rainier)
+
+# Individual: :Valta (:Valta)
+
+ClassAssertion(:Dwarf :Valta)
+
+# Individual: :Varania (:Varania)
+
+ClassAssertion(:Elf :Varania)
+
+# Individual: :Velanna (:Velanna)
+
+ClassAssertion(:Elf :Velanna)
+
+# Individual: :Verric (:Verric)
+
+ClassAssertion(:Dwarf :Verric)
+
+# Individual: :Viddasala (:Viddasala)
+
+ClassAssertion(:Qunari :Viddasala)
+
+# Individual: :Vivienne (:Vivienne)
+
+ClassAssertion(:Human :Vivienne)
+
+# Individual: :Wynne (:Wynne)
+
+ClassAssertion(:Human :Wynne)
+ClassAssertion(:Spirit :Wynne)
+
+# Individual: :Yavana (:Yavana)
+
+ClassAssertion(:Human :Yavana)
+
+# Individual: :Zathrian (:Zathrian)
+
+ClassAssertion(:Elf :Zathrian)
+
+# Individual: :Zevran (:Zevran)
+
+ClassAssertion(:Elf :Zevran)
+
+# Individual: :Harel (:Harel)
+
+ClassAssertion(:Elf :Harel)
+
+
+DisjointClasses(:Dwarf :Elf :Human :Person :Qunari :Spirit)
+)
